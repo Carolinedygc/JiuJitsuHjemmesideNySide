@@ -1,0 +1,41 @@
+/*DESKTOP STYLING*/
+
+/* SIZES */
+--textSize: 16px;
+--h1Size: 40px;
+--h2Size:24px;
+
+
+
+/* COLOURS */
+--black:#1f1b1c;
+--red:#ee202d;
+--white:#ffffff;
+--grey:#3c3c3c;
+
+/* TYPOGRAPHY */
+
+
+
+
+/* HEADER */
+/* FOOTER */
+/* BODY */
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+/*MOBILE STYLING*/
+@media (max-width: px)
+/* SIZES */
+--textSize: 16px;
+--h1Size: 32px;
+--h2Size: 20px;
+
+/* HEADER */
+/* FOOTER */
