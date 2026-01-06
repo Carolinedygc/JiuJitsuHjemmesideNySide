@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*DESKTOP STYLING*/
 
 :root {
     /* SIZES */
     --textSize: 16px;
-    --h1Size: 40px;
-    --h2Size: 24px;
+    --desktopOverskriftSize: 40px;
+    --desktopUnderoverskriftSize: 24px;
+
 
 
     /* COLOURS */
@@ -27,16 +29,14 @@ body {
 
 
 
-
 /*MOBILE STYLING*/
 @media (max-width: px) {
 
     /* SIZES */
     :root {
 
-        --textSize: 16px;
-        --overskriftSize: 32px;
-        --underoverskriftSize: 20px;
+        --mobileOverskriftSize: 32px;
+        --mobileUnderoverskriftSize: 20px;
     }
 
 }
