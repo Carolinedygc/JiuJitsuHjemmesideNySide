@@ -8,6 +8,7 @@
     --desktopUnderoverskriftSize: 24px;
 
 
+
     /* COLOURS */
     --black: #1F1B1C;
     --red: #ee202d;
@@ -27,12 +28,69 @@ body {
 
 
 /* HEADER */
-/* FOOTER */
-/* BODY */
-body {
-    margin: 0;
-    padding: 3rem;
+header {
+    nav {
+
+        background-color: var(--white);
+        width: 100%;
+        position: fixed;
+        top: 0;
+
+        ul li a {
+            color: var(--red);
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            list-style: none;
+        }
+
+        .dropdownKnap {
+            color: var(--red);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdownIndhold {
+            display: none;
+            position: absolute;
+            background-color: var(--white);
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdownIndhold a {
+            color: var(--red);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+
+        /* hovereffekter */
+
+        .dropdownIndhold a:hover {
+            background-color: var(--lightGrey);
+        }
+
+
+        .dropdown:hover .dropdownIndhold {
+            display: block;
+        }
+
+        .dropdown:hover .dropdownKnap {
+            background-color: var(--lightGrey);
+        }
+    }
 }
+
+
+/* FOOTER */
 
 
 
@@ -45,7 +103,6 @@ body {
     /* SIZES */
     :root {
 
-        --textSize: 16px;
         --mobileOverskriftSize: 32px;
         --mobileUnderoverskriftSize: 20px;
     }
