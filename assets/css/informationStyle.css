@@ -29,6 +29,112 @@ body {
     font-family: var(--tekstFont);
 }
 
+section {
+    padding: var(--space);
+}
+
+
+.indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.kontakt {
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    .indryk {
+        padding-left: 2rem;
+    }
+}
+
+.map {
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        color: var(--black);
+    }
+}
+
+/* VENSKABSKLUBBER */
+.venskabsklubber {
+    grid-column: 1/-1;
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    .logoer {
+        display: flex;
+        padding: 0 5rem 0 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        height: 150px;
+    }
+}
+
+
+
+
+/* FAQ */
+.faq {
+    grid-column: 1/2;
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    p {
+        text-decoration: underline;
+    }
+}
+
+
+/* KONTAKTFORMULAR */
+.kontaktformular {
+    background-color: var(--lightGrey);
+    padding: 2rem;
+    grid-column: 2/-1;
+    border-radius: 10px;
+
+    .felter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+.tekstFelt {
+    height: 200px;
+    width: 100%;
+    text-align: start;
+}
+
+input {
+    height: 2rem;
+    width: 100%;
+}
+
+.send {
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--black);
+    color: var(--white);
+    height: 2rem;
+    width: 100%;
+    border-radius: 5px;
+}
 
 
 /*MOBILE STYLING*/
