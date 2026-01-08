@@ -7,6 +7,7 @@
     --textSize: 16px;
     --desktopOverskriftSize: 40px;
     --desktopUnderoverskriftSize: 24px;
+    --space: 2rem 14rem 2rem 14rem;
 
 
 
@@ -35,20 +36,26 @@ body {
     display: block;
 }
 
+.heroTekst {
+    padding: var(--space);
+}
+
 .introTekst {
     text-align: center;
-    padding: 4rem 10rem 2rem 10rem;
+    padding: var(--space);
 
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 10rem 2rem 10rem;
+    padding: var(--space);
 
-    div {
+
+    .card {
         background-color: var(--red);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
     }
 
     p {
@@ -58,6 +65,8 @@ body {
         background-color: var(--grey);
         padding: 1rem;
         margin: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
 
     }
 
@@ -74,7 +83,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-    padding: 2rem 10rem 2rem 10rem;
+    padding: var(--space);
 
 }
 
@@ -83,6 +92,10 @@ body {
 }
 
 
+.klubben,
+.events {
+    padding: var(--space);
+}
 
 /*MOBILE STYLING*/
 @media (max-width: px) {
