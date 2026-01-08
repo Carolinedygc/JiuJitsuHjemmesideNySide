@@ -7,6 +7,7 @@
     --textSize: 16px;
     --desktopOverskriftSize: 40px;
     --desktopUnderoverskriftSize: 24px;
+    --space: 2rem 14rem 2rem 14rem;
 
 
 
@@ -28,6 +29,14 @@ body {
     font-family: var(--tekstFont);
 }
 
+section {
+    padding: var(--space);
+}
+
+.slut {
+    text-align: center;
+    padding: 2rem 0;
+}
 
 
 /*MOBILE STYLING*/
