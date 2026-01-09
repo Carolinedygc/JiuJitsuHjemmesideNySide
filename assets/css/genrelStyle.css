@@ -49,7 +49,7 @@ body {
     }
 
     .linje {
-        width: 500px;
+        width: 80%;
         border: 2px solid var(--red);
         margin: 0;
     }
@@ -269,8 +269,27 @@ footer {
 
     /* FOOTER */
 
+    footer {
+        .first {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            text-align: center;
+        }
 
+        .socialeMedier {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+    }
 }
+
 
 /*MOBILE STYLING*/
 
@@ -295,11 +314,7 @@ footer {
             font-size: var(--mobileUnderoverskriftSize);
         }
 
-        .linje {
-            width: 300px;
-            border: 2px solid var(--red);
-            margin: 0;
-        }
+
     }
 
     /* HEADER */
@@ -310,36 +325,5 @@ footer {
     /* FOOTER */
     footer {
         padding: var(--mobileSpaceHeaderFooter);
-
-        .first {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .socialeMedier {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .copyright {
-            text-align: center;
-        }
-
-
-        .first {
-            .socialeMedier {
-                flex-direction: row;
-                justify-content: center;
-                gap: 2rem;
-            }
-        }
-
     }
-
-
-
-
 }

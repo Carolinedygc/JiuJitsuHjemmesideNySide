@@ -74,6 +74,11 @@ body {
     main {
         padding: 2rem 10rem 2rem 10rem;
     }
+
+
+    .indhold {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* MEDIA QUARIES 700 PX */
@@ -121,7 +126,4 @@ body {
         padding: var(--mobileSpace);
     }
 
-    .indhold {
-        grid-template-columns: 1fr;
-    }
 }
