@@ -82,6 +82,7 @@ body {
     flex-direction: column;
     background-color: var(--lightGrey);
     padding: 2rem;
+    margin-bottom: 100px;
 
 
     h3 {
