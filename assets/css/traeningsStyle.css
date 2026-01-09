@@ -26,6 +26,54 @@
 /* BODY */
 body {
     font-family: var(--tekstFont);
+    background-image: url(/assets/img/Baggrundsbillede_1920.webp);
+    background-color: rgba(255, 255, 255, 0.95);
+    background-blend-mode: lighten;
+}
+
+.traening-hero {
+    max-width: 100%;
+}
+
+.intro {
+    padding-left: 11rem;
+
+    h1 {
+        font-size: var(--desktopOverskriftSize);
+    }
+}
+
+.HDtraening {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.HVtraening {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+
+    h3 {
+        font-size: var(--desktopUnderoverskriftSize);
+        color: var(--red);
+        padding-left: 8rem;
+        margin-bottom: 0%;
+    }
+
+    p {
+        color: var(--black);
+        padding: 1rem 3rem 1rem 3rem;
+        padding-left: 8rem;
+        line-height: 1.6;
+        margin-top: 0%;
+    }
+
+    video {
+        padding-left: 6rem;
+        margin: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
 }
 
 .udstyr {
@@ -33,17 +81,37 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--lightGrey);
+    padding: 2rem;
 
-    h3,
-    p,
-    ul {
+
+    h3 {
+        font-size: var(--desktopUnderoverskriftSize);
+        color: var(--red);
+        padding-left: 8.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+
+}
+
+.udstyrrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22rem;
+
+    p {
         color: var(--black);
         padding: 1rem 3rem 1rem 3rem;
+
+        line-height: 1.6;
+        margin-top: 0%;
     }
 
     img {
-        width: 100%;
-
+        max-width: 100%;
+        padding-left: 8.5rem;
     }
 
 }
