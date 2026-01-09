@@ -7,6 +7,8 @@
     --textSize: 16px;
     --desktopOverskriftSize: 40px;
     --desktopUnderoverskriftSize: 24px;
+    --space: 2rem 14rem 2rem 14rem;
+    --sectionSpace: 2rem 0 2rem 0;
 
 
 
@@ -15,6 +17,7 @@
     --red: #ee202d;
     --white: #ffffff;
     --grey: #3c3c3c;
+    --lightGrey: #3c3c3c33;
 
 
     /* TYPOGRAPHY */
@@ -23,20 +26,203 @@
 
 
 /* BODY */
+main {
+    padding: var(--space);
+}
+
 body {
     font-family: var(--tekstFont);
+    color: var(--black);
+
+    p {
+        font-size: var(--textSize);
+    }
+
+    h1 {
+        font-size: var(--desktopOverskriftSize);
+    }
+
+    h2 {
+        font-size: var(--desktopUnderoverskriftSize);
+    }
+}
+
+.intro img {
+    width: 100%;
+    height: 350px !important;
+    object-fit: cover;
+    display: block;
 }
 
 
+.introTekst {
+    text-align: center;
+    padding: var(--sectionSpace);
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--sectionSpace);
+
+
+    .card {
+        background-color: var(--red);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    p {
+        text-align: center;
+        color: var(--white);
+        font-weight: 500;
+        background-color: var(--grey);
+        padding: 1rem;
+        margin: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        filter: brightness(0) saturate(100%) invert(100%);
+        margin: 2rem;
+    }
+}
+
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: var(--sectionSpace);
+
+}
+
+.fed {
+    grid-column: 2/-1;
+
+    p {
+        font-weight: 700;
+
+    }
+}
+
+
+.klubben,
+.events {
+    padding: var(--sectionSpace);
+
+    .klub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding-bottom: 2rem;
+
+        img {
+            grid-column: 1/2;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    .event {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding-bottom: 2rem;
+
+        img {
+            grid-column: 2/-1;
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    button {
+        background-color: var(--red);
+        color: var(--white);
+        height: 2rem;
+        width: 10rem;
+        border-radius: 5px;
+        font-weight: 600;
+        grid-column: 2/-1;
+        margin-top: 1rem;
+        border: none;
+
+    }
+}
 
 /*MOBILE STYLING*/
-@media (max-width: px) {
+@media (max-width: 402px) {
 
     /* SIZES */
     :root {
 
         --mobileOverskriftSize: 32px;
         --mobileUnderoverskriftSize: 20px;
+        --mobileSpace: 2rem;
+
+    }
+
+    main {
+        padding: var(--mobileSpace);
+    }
+
+    body {
+        h1 {
+            font-size: var(--mobileOverskriftSize);
+        }
+
+        h2 {
+            font-size: var(--mobileUnderoverskriftSize);
+        }
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .intro img {
+        height: 200px !important;
+
+    }
+
+    .info {
+        display: none;
+    }
+
+
+
+    .klubben {
+
+        .klub {
+            grid-template-columns: 1fr;
+        }
+
+        img {
+            height: 200px;
+        }
+    }
+
+    .events {
+
+        .event {
+            display: block;
+        }
+
+        img {
+            height: 200px;
+        }
     }
 
 }

@@ -7,6 +7,8 @@
     --textSize: 16px;
     --desktopOverskriftSize: 40px;
     --desktopUnderoverskriftSize: 24px;
+    --space: 2rem 14rem 2rem 14rem;
+    --sectionSpace: 2rem 0 2rem 0;
 
 
 
@@ -24,20 +26,184 @@
 
 
 /* BODY */
+main {
+    padding: var(--space);
+}
+
 body {
     font-family: var(--tekstFont);
+    color: var(--black);
+
+    p {
+        font-size: var(--textSize);
+    }
+
+    h1 {
+        font-size: var(--desktopOverskriftSize);
+    }
+
+    h2 {
+        font-size: var(--desktopUnderoverskriftSize);
+    }
+}
+
+
+.indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: var(--sectionSpace);
+}
+
+.kontakt {
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    .indryk {
+        padding-left: 2rem;
+    }
+}
+
+.map {
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        color: var(--black);
+    }
+}
+
+/* VENSKABSKLUBBER */
+.venskabsklubber {
+    grid-column: 1/-1;
+    padding: var(--sectionSpace);
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    .logoer {
+        display: flex;
+        padding: 0 5rem 0 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        height: 150px;
+    }
 }
 
 
 
+
+/* FAQ */
+.faq {
+    grid-column: 1/2;
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    p {
+        text-decoration: underline;
+    }
+}
+
+
+/* KONTAKTFORMULAR */
+.kontaktformular {
+    background-color: var(--lightGrey);
+    padding: 2rem;
+    grid-column: 2/-1;
+    border-radius: 10px;
+
+    .felter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+.tekstFelt {
+    height: 150px;
+    width: 100%;
+    text-align: start;
+}
+
+input {
+    height: 2rem;
+    width: 100%;
+}
+
+.send {
+    background-color: var(--black);
+    color: var(--white);
+    height: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+
 /*MOBILE STYLING*/
-@media (max-width: px) {
+@media (max-width: 402px) {
 
     /* SIZES */
     :root {
 
         --mobileOverskriftSize: 32px;
         --mobileUnderoverskriftSize: 20px;
+        --mobileSpace: 2rem;
+    }
+
+    main {
+        padding: var(--mobileSpace);
+    }
+
+
+    .indhold {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+
+    .faq,
+    .kontaktformular {
+        grid-column: 1 / -1;
+    }
+
+    /* KONTAKTFORMULAR */
+    .kontaktformular .felter {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* VENSKABSKLUBBER */
+    .venskabsklubber {
+        grid-column: 1 / -1;
+    }
+
+
+    .venskabsklubber .logoer>div {
+        gap: 1.5rem;
+
+        img {
+            height: 50px;
+            width: auto;
+        }
+    }
+
+    .venskabsklubber img {
+        height: auto;
+        width: 100%;
     }
 
 }

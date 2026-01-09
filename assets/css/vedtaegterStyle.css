@@ -7,6 +7,8 @@
     --textSize: 16px;
     --desktopOverskriftSize: 40px;
     --desktopUnderoverskriftSize: 24px;
+    --space: 2rem 14rem 2rem 14rem;
+    --sectionSpace: 2rem 0 2rem 0;
 
 
 
@@ -24,20 +26,47 @@
 
 
 /* BODY */
+main {
+    padding: var(--space);
+}
+
 body {
     font-family: var(--tekstFont);
+    color: var(--black);
+
+    p {
+        font-size: var(--textSize);
+    }
+
+    h1 {
+        font-size: var(--desktopOverskriftSize);
+    }
+
+    h2 {
+        font-size: var(--desktopUnderoverskriftSize);
+    }
 }
 
 
+.slut {
+    text-align: center;
+    padding: 2rem 0;
+}
+
 
 /*MOBILE STYLING*/
-@media (max-width: px) {
+@media (max-width: 402px) {
 
     /* SIZES */
     :root {
 
         --mobileOverskriftSize: 32px;
         --mobileUnderoverskriftSize: 20px;
+        --mobileSpace: 2rem;
     }
 
+
+    main {
+        padding: var(--mobileSpace);
+    }
 }
