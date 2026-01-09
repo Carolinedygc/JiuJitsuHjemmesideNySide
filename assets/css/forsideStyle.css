@@ -185,6 +185,11 @@ body {
         gap: 1rem;
     }
 
+    .fed {
+        grid-column: 1/-1;
+    }
+
+
 
 }
 
@@ -205,10 +210,13 @@ body {
                 align-self: center;
             }
         }
+
+
     }
 
     .info {
         display: none;
+
     }
 
     .klubben {

@@ -90,7 +90,7 @@ body {
 
     .logoer {
         display: flex;
-        padding: 0 5rem 0 5rem;
+
         flex-direction: column;
         align-items: center;
     }
@@ -109,6 +109,7 @@ body {
 
     h2 {
         padding-bottom: 2rem;
+        padding-top: 2rem;
     }
 
     p {
@@ -152,10 +153,49 @@ input {
     border: none;
 }
 
+/* MEDIA QUARIES 1500 PX */
+@media (max-width: 1500px) {
+
+    .kontaktformular {
+        p {
+            font-size: smaller;
+        }
+    }
+}
+
+
 /* MEDIA QUARIES 1300 PX */
+@media (max-width: 1300px) {
+
+    .kontaktformular,
+    .faq {
+        grid-column: 1/-1;
+    }
+
+    .faq {
+        text-align: center;
+    }
+}
+
+/* MEDIA QUARIES 1200 PX */
+@media (max-width: 1200px) {
+
+
+    .venskabsklubber img {
+        height: 70px;
+        width: auto;
+    }
+}
+
+
+/* MEDIA QUARIES 1050 PX */
 @media (max-width: 1050px) {
     main {
         padding: 2rem 10rem 2rem 10rem;
+    }
+
+    .indhold {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -165,18 +205,15 @@ input {
     main {
         padding: 2rem 6rem 2rem 6rem;
     }
+
+    /* KONTAKTFORMULAR */
+    .kontaktformular .felter {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* MEDIA QUARIES 500 PX */
-@media (max-width: 500px) {
-    :root {
-        --mobileSpace: 2rem;
-    }
-
-    main {
-        padding: var(--mobileSpace);
-    }
-}
+@media (max-width: 500px) {}
 
 
 /*MOBILE STYLING*/
@@ -195,21 +232,12 @@ input {
     }
 
 
-    .indhold {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
 
     .faq,
     .kontaktformular {
         grid-column: 1 / -1;
     }
 
-    /* KONTAKTFORMULAR */
-    .kontaktformular .felter {
-        grid-template-columns: 1fr;
-    }
 
 
     /* VENSKABSKLUBBER */
@@ -222,7 +250,7 @@ input {
         gap: 1.5rem;
 
         img {
-            height: 50px;
+            height: 40px;
             width: auto;
         }
     }
