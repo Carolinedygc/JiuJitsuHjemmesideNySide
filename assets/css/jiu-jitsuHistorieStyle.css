@@ -29,6 +29,88 @@ body {
 }
 
 
+.timeline {
+    display: grid;
+    grid-template-columns: 1fr 4px 1fr;
+    row-gap: 40px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    margin-top: 2rem;
+}
+
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #333;
+    transform: translateX(-50%);
+}
+
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 4px 1fr;
+    grid-column: 1 / -1;
+}
+
+
+.timeline-content {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 650px;
+    display: flex;
+    gap: 1rem;
+
+    img {
+        max-width: 300px;
+        height: 200px;
+        border: 1px solid black;
+    }
+}
+
+
+.timeline-item.left .timeline-content {
+    grid-column: 1;
+    justify-self: end;
+}
+
+.timeline-item.right {
+    grid-column: 3;
+    justify-self: start;
+}
+
+.timeline-item.right .timeline-content {
+    grid-column: 3;
+    justify-self: start;
+}
+
+.timeline-content {
+    position: relative;
+}
+
+.timeline-content::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+}
+
+.left .timeline-content::after {
+    right: -20px;
+}
+
+.right .timeline-content::after {
+    left: -20px;
+}
+
 
 /*MOBILE STYLING*/
 @media (max-width: px) {

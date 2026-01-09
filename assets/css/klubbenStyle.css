@@ -26,29 +26,163 @@
 /* BODY */
 body {
     font-family: var(--tekstFont);
+    background-image: url(/assets/img/Baggrundsbillede_1920.webp);
+    background-color: rgba(255, 255, 255, 0.95);
+    background-blend-mode: lighten;
 }
 
+.burger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    z-index: 1000;
+}
+
+.intro {
+    padding-left: 14rem;
+}
+
+.Hjoeringklubben {
+    max-width: 100%;
+}
+
+.Omklubben {
+    display: grid;
+    grid-template-columns: 1fr 1fr 400px;
+    grid-template-rows: auto auto;
+    margin: auto;
+    padding: 14rem 14rem;
+    align-items: start;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+
+.otk {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    column-count: 2;
+    column-gap: 4rem;
+}
+
+.Omklubben img {
+    max-width: 400px;
+    height: auto;
+    grid-column: 3;
+    grid-row: 2;
+    padding: 1rem;
+}
+
+.kluboverskrift {
+    grid-column: 1 / 3;
+    color: var(--red);
+    font-size: var(--desktopUnderoverskriftSize);
+    margin-top: 2rem;
+}
+
+.vidstedu {
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.VDbox h3 {
+    font-size: var(--desktopUnderoverskriftSize);
+    color: var(--red);
+}
+
+.VDbox {
+    width: 800px;
+    padding: 2rem;
+    background-color: rgba(60, 60, 60, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.HKtekst {
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    grid-template-rows: auto;
+    padding-left: 14rem;
+}
+
+.HKtekst h3 {
+    color: var(--red);
+    font-size: var(--desktopUnderoverskriftSize);
+
+}
+
+.HKp {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5;
+}
+
+
+.HKbilleder {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    gap: 1rem;
+    padding-right: 14rem;
+}
+
+.HKbilleder img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+
 /* instruktører */
+.instruktoer {
+    color: var(--red);
+    font-size: 40px;
+    padding-left: 14rem;
+}
+
 .cards {
     display: flex;
     justify-content: space-evenly;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-right: 14rem;
+    padding-left: 14rem;
+    max-width: 1200px;
 
     div {
         background-color: var(--lightGrey);
         padding: 1rem;
-        width: 400px;
+        max-width: 400px;
+        margin-top: 0;
     }
 
     img {
-        width: 400px;
+        max-width: 400px;
+    }
+
+    .anders {
+        padding: 1rem;
+    }
+
+    .morten {
+        padding: 1rem;
+    }
+
+    .soeren {
+        padding: 1rem;
     }
 }
 
 
 /*MOBILE STYLING*/
-@media (max-width: px) {
+@media (max-width: 800px) {
 
     /* SIZES */
     :root {
@@ -57,4 +191,131 @@ body {
         --mobileUnderoverskriftSize: 20px;
     }
 
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 70%;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navbar ul li {
+        margin: 1rem 0;
+    }
+
+    .dropdownIndhold {
+        position: static;
+        display: none;
+        padding-left: 1rem;
+    }
+
+    .dropdown.open .dropdownIndhold {
+        display: block;
+    }
+
+
+    .intro {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .Omklubben {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        padding: 1rem;
+    }
+
+    .kluboverskrift {
+        grid-column: 1;
+        font-size: var(--mobileUnderoverskriftSize);
+        margin-top: 1rem;
+    }
+
+    .otk {
+        grid-column: 1;
+        grid-row: 2;
+        column-count: 1;
+        column-gap: 0;
+    }
+
+    .Omklubben img {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 100%;
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+    .vidstedu {
+        padding: 1rem;
+    }
+
+    .VDbox {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .VDbox h3 {
+        font-size: var(--mobileUnderoverskriftSize);
+    }
+
+    .HKtekst {
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1.5rem;
+    }
+
+    .HKtekst h3 {
+        font-size: var(--mobileUnderoverskriftSize);
+    }
+
+    .HKp {
+        grid-column: 1;
+    }
+
+    .HKbilleder {
+        grid-column: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HKbilleder img {
+        max-width: 100%;
+    }
+
+    .instruktoer {
+        font-size: 28px;
+        padding-left: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+
+    }
+
+    .cards div {
+        max-width: 100%;
+
+    }
+
+    .cards img {
+        max-width: 100%;
+
+    }
 }
