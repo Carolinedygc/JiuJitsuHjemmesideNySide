@@ -138,23 +138,53 @@ body {
 
     main {
         padding: var(--mobileSpace);
+    }
 
-        .HDtraening {
-            display: flex;
-            flex-direction: column;
-        }
+    .intro {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 
-        .udstyr {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .udstyrrow {
-            display: flex;
-            flex-direction: column;
-        }
+    .intro h1 {
+        font-size: var(--mobileOverskriftSize);
     }
 
 
+    .HDtraening {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
 
+    .HVtraening p {
+        height: auto;
+    }
+
+    .HVtraening video {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .udstyr h3 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: var(--mobileUnderoverskriftSize);
+    }
+
+    .udstyrrow {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .udstyrrow img {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .udstyrrow p {
+        padding-right: 0;
+    }
 }
