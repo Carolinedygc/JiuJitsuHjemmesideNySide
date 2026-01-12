@@ -59,7 +59,7 @@ main {
 
         img {
             margin: 0 -14rem 0 -14rem;
-            width: calc(100% + 28rem);
+            width: 100vw;
             height: auto;
         }
     }
