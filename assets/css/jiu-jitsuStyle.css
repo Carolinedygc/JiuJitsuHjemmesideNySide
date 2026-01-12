@@ -152,9 +152,9 @@ main {
     gap: 2rem;
 
     img {
-        max-width: 460px;
-        height: auto;
-
+        max-width: 500px;
+        height: 450px;
+        margin-top: 150px;
     }
 
 }
@@ -187,6 +187,8 @@ main {
 
 }
 
+
+
 /* MEDIA QUARIES 1300 PX */
 @media (max-width: 1050px) {
     main {
@@ -215,7 +217,7 @@ main {
 
 
 /*MOBILE STYLING*/
-@media (max-width: px) {
+@media (max-width: 800px) {
 
     /* SIZES */
     :root {
@@ -224,4 +226,39 @@ main {
         --mobileUnderoverskriftSize: 20px;
     }
 
+    main {
+
+        .Hvadjiujitsu {
+            flex-direction: column;
+        }
+
+        .beach {
+            flex-direction: column;
+
+        }
+
+        .teknikker {
+            flex-direction: column;
+        }
+
+        .tek2 {
+
+            flex-direction: column
+        }
+
+        .tek {
+
+            flex-direction: column
+        }
+
+
+
+        .rutiner {
+            flex-direction: column;
+        }
+
+        .graduering {
+            flex-direction: column;
+        }
+    }
 }
