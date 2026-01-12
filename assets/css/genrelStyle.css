@@ -95,8 +95,9 @@ header {
 
         ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: end;
             align-items: center;
+            gap: 2rem;
             width: 100%;
             padding: 0;
         }
@@ -111,7 +112,6 @@ header {
         ul li a {
             color: var(--red);
             text-decoration: none;
-            padding: 14px 20px;
             display: block;
             padding: 0;
 
@@ -123,9 +123,6 @@ header {
 
         }
 
-        .figurLogo {
-            padding-left: 2rem;
-        }
 
         .logo {
             padding-right: 2rem;
@@ -133,7 +130,6 @@ header {
 
         .dropdownKnap {
             color: var(--red);
-            padding: 16px;
             font-size: 16px;
             border: none;
         }
