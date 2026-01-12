@@ -33,6 +33,14 @@ body {
     background-blend-mode: lighten;
 }
 
+.intro {
+    img {
+        width: 100vw;
+        height: auto;
+        margin: 0 -14rem 0 -14rem;
+    }
+}
+
 main {
     padding: var(--space);
 }
@@ -188,6 +196,12 @@ main {
         padding: 2rem 10rem 2rem 10rem;
     }
 
+    .intro {
+        img {
+            display: none;
+        }
+    }
+
     .Hvadjiujitsu,
     .beach,
     .teknikker,
@@ -251,7 +265,6 @@ main {
         padding: var(--mobileSpace);
     }
 
-
 }
 
 
@@ -273,9 +286,6 @@ main {
             max-width: 100%;
             height: auto;
         }
-
-
-
 
     }
 }

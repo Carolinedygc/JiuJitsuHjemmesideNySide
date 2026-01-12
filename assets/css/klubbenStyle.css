@@ -37,17 +37,6 @@ main {
 }
 
 
-.burger {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute;
-    right: 2rem;
-    top: 1.5rem;
-    z-index: 1000;
-}
-
-
 .Hjoeringklubben {
     max-width: 100%;
 }
@@ -71,6 +60,7 @@ main {
 
 .Omklubben img {
     max-width: 400px;
+    width: 100%;
     height: auto;
     grid-column: 3;
     grid-row: 2;
@@ -107,6 +97,7 @@ main {
 .HKtekst {
     display: grid;
     grid-template-columns: 400px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
 
@@ -177,10 +168,32 @@ main {
     }
 }
 
-/* MEDIA QUARIES 1300 PX */
+/* MEDIA QUARIES 1050 PX */
 @media (max-width: 1050px) {
     main {
         padding: 2rem 10rem 2rem 10rem;
+    }
+}
+
+/* .Omklubben {
+        grid-template-columns: 1fr;
+
+        .otk {
+            grid-column: span 1;
+        }
+
+        img {
+            width: 100%;
+            grid-column: span 1;
+        }
+    }
+
+    img {
+        grid-column: 1 / -1;
+    }
+
+    .HKtekst {
+        grid-template-columns: 1fr;
     }
 }
 
