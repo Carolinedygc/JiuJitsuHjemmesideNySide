@@ -38,6 +38,15 @@ main {
     gap: 2rem;
 }
 
+.intro {
+
+    img {
+        width: 100vw;
+        height: auto;
+        margin: 0 -14rem 0 -14rem;
+    }
+}
+
 .hold {
     display: flex;
     flex-direction: row;
@@ -65,6 +74,13 @@ main {
 @media (max-width: 1050px) {
     main {
         padding: 2rem 10rem 2rem 10rem;
+    }
+
+    .intro {
+
+        img {
+            display: none;
+        }
     }
 
     .hold {
