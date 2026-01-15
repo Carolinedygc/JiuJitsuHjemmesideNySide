@@ -93,11 +93,39 @@ main {
 @media (max-width: 1050px) {
     main {
         padding: 2rem 10rem 2rem 10rem;
-
-        img {
-          display: none;
-        }
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
     }
+    .budoregler {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+.budoregler-text ul {
+  margin-left: 20px;
+}
+
+.budoregler-text li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* BILLEDER */
+.budoregler-images {
+  display: none;
+  gap: 0px;
+}
+
+.budoregler-images img {
+  display: none;
+  
+}
+    
 }
 
 /* MEDIA QUARIES 700 PX */
