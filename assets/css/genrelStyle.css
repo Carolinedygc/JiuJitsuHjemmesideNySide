@@ -187,11 +187,7 @@ header {
   display: inline-block;
 }
 
-.copyrightimg img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+
 .copyrightimg::after {
   content: "© Hjørring Jiu-Jitsu klub";
   position: absolute;
