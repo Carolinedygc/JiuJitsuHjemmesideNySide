@@ -181,23 +181,24 @@ header {
         }
     }
 }
+
 /* Copyright */
 .copyrightimg {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 
 .copyrightimg::after {
-  content: "© Hjørring Jiu-Jitsu klub";
-  position: absolute;
-  bottom: 8px;
-  left: 10px;
-  font-size: 12px;
-  color: white;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 3px 6px;
-  border-radius: 4px;
+    content: "© Hjørring Jiu-Jitsu klub";
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3px 6px;
+    border-radius: 4px;
 }
 
 
@@ -232,23 +233,22 @@ footer {
         .logo {
             align-self: center;
         }
-
-        .socialeMedier {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-
-            i {
-                font-size: 3rem;
-                padding: 1rem;
-            }
-        }
     }
 
     .second {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding: 1rem;
+
+        .socialeMedier {
+            i {
+                color: var(--white);
+                font-size: 3rem;
+                padding: 1rem;
+            }
+        }
 
     }
 }
