@@ -158,6 +158,9 @@ main {
     main .timeline {
         grid-template-columns: 1fr;
     }
+    main .bottom3 {
+        grid-template-columns: 1fr;
+    }
 
     .timeline-content img {
         display: none;
